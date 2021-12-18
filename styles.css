@@ -1,0 +1,101 @@
+body {
+  height: 100vh;
+  background-color: darkcyan;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.star {
+  margin-left: 3px;
+}
+
+.trunk {
+  width: 30px;
+  height: 60px;
+  background-color: saddlebrown;
+}
+
+.tree-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tree-cell {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.tree-cell::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.container.animated .tree-cell.pulse-1::after {
+  animation: pulse-1 2s infinite;
+  border: 0.5px solid gray;
+}
+
+.container.animated .tree-cell.pulse-2::after {
+  animation: pulse-2 2s infinite;
+  border: 0.5px solid gray;
+}
+
+.container.animated .tree-cell.pulse-3::after {
+  animation: pulse-3 2s infinite;
+  border: 0.5px solid gray;
+}
+
+@keyframes pulse-1 {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: darkgreen;
+  }
+}
+
+@keyframes pulse-2 {
+  0% {
+    background-color: darkgreen;
+  }
+  50% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes pulse-3 {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: darkgreen;
+  }
+
+  100% {
+    background-color: yellow;
+  }
+}

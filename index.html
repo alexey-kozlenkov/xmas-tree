@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>🎄 🎄 🎄</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="tree-row">
+      <div class="star">⭐️</div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+      <div class="tree-cell"></div>
+    </div>
+    <div class="tree-row">
+      <div class="trunk"></div>
+    </div>
+  </div>
+  <script>
+    const container = document.querySelector('.container')
+    const balls = document.querySelectorAll('.tree-cell')
+
+    container.addEventListener('click', () => {
+      !container.classList.contains('animated') && assignClasses()
+      container.classList.toggle('animated')
+    })
+
+    function assignClasses() {
+      balls.forEach((element) => {
+        const num = Math.ceil(Math.random() * 3)
+        const className = `pulse-${num}`
+        element.className = `tree-cell ${className}`
+      })
+    }
+  </script>
+</body>
+
+</html>
